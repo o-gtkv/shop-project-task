@@ -27,6 +27,14 @@
     width: 75%;
 }
 
+.col-md-3 > .row > .col-md-2 {
+    width: 66.6666667%;
+}
+
+.col-md-3 > .row > .col-md-1 {
+    width: 33.3333333%;
+}
+
 .col-md-9 > .row > .col-md-6 {
     width: 66.67%;
 }
