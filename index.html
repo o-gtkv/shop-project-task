@@ -22,13 +22,13 @@
                 </div>
                 <div class="col-md-6">
                     <nav>
-                        <ul class="menu-bar">
+                        <ul class="menu">
                             <li><a href="">Home</a></li>
-                            <li class="qwe">
+                            <li>
                                 <span>Products</span>                                
-                                <ul class="menu">
+                                <ul class="submenu">
                                     <li><a href="">Lorem ipsum</a></li>
-                                    <li><a href="">Dolor sit amet </a></li>
+                                    <li><a href="">Dolor sit amet </a></li>                                    
                                     <li><a href="">Consectetur adipisicing</a></li>
                                     <li><a href="">Doloribus doloremque</a></li>
                                     <li><a href="">Magni reprehenderit</a></li>
@@ -40,11 +40,11 @@
                             <li><a href="">Shipping</a></li>
                         </ul>                        
                     </nav>                    
-                </div>
+                </div> 
                 <div class="col-md-3">
                     <div class="row">
                         <div class="col-md-2">
-                            <form class="search-form" action="">
+                            <form class="form-search" action="">
                                 <input name="search" type="text" placeholder="search">
                                 <input type="submit" value="">
                             </form>
@@ -67,11 +67,11 @@
                     Filter
                 </div>
                 <div class="col-md-9">
-                    <nav class="main-nav">         
+                    <nav class="nav-main">         
                         <p>
-                            <a href="">Home page</a>
-                            <a href="">Products</a>
-                            <a href="">Laptops and Tablets</a>                        
+                            <span><a href="">Home page</a> > </span>
+                            <span><a href="">Products</a> > </span>
+                            <span><a href="">Laptops and Tablets</a></span>
                         </p>               
                     </nav>                
                     <div class="row">
@@ -79,60 +79,79 @@
                             <h1>Laptops and Tablets</h1>  
                         </div>
                         <div class="col-md-3">
-                            <select class="select-sorting" name="" id="">
-                                <option value="">sort by</option>
-                            </select>
+                            select
                         </div>                    
                     </div>
                     <div class="row">
                         <div class="col-md-3">
                             <div class="product">
                                 <div class="product-img">
-                                    <img src="images/display.png" alt="">
+                                    <img src="images/display.png" alt="display">
+                                    <div class="product-icons">
+                                        <button class="scale-icon"></button>
+                                        <button class="like-icon"></button>
+                                    </div>                                    
                                 </div>                                
                                 <div class="product-info">
                                     <h2>#1 Device Name</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>                            
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                                     <p><span>type:</span> Laptop</p>
                                     <p><span>screen size:</span> 7 inches</p>
                                     <p><span>ram:</span> 1 GB</p>
-                                    <p><h1 class="price">$599<sup>25</sup></h1></p>
-                                    <input class="btn transparent" type="button" value="MORE DETAILS">
-                                    <input class="btn" type="button" value="ADD TO CART">
+                                    <p><h1 class="centered-text">$599<sup>25</sup></h1></p>                                    
+                                    <button class="btn-type-2">MORE DETAILS</button>                                    
+                                    <button class="btn-type-1">
+                                        ADD TO CART
+                                        <img src="images/cart-add.png" alt="">
+                                    </button>
                                 </div>                
                             </div>            
                         </div>
                         <div class="col-md-3">
                             <div class="product">
                                 <div class="product-img">
-                                    <img src="images/tv-box.png" alt="">
+                                    <img src="images/tv-box.png" alt="tv-box">
+                                    <div class="product-icons">
+                                        <button class="scale-icon"></button>
+                                        <button class="like-icon"></button>
+                                    </div>
                                 </div>                                
                                 <div class="product-info">
                                     <h2>#2 Device Name</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>                            
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                                     <p><span>type:</span> Laptop</p>
                                     <p><span>screen size:</span> 7 inches</p>
                                     <p><span>ram:</span> 1 GB</p>
-                                    <p><h1 class="price">$1250<sup>99</sup></h1></p>
-                                    <input class="btn transparent" type="button" value="MORE DETAILS">
-                                    <input class="btn" type="button" value="ADD TO CART">
+                                    <p><h1 class="centered-text">$1250<sup>99</sup></h1></p>
+                                    <button class="btn-type-2">MORE DETAILS</button>
+                                    <button class="btn-type-1">
+                                        ADD TO CART
+                                        <img src="images/cart-add.png" alt="">
+                                    </button>                                    
                                 </div>                                                
                             </div>            
                         </div>
                         <div class="col-md-3">
                             <div class="product">
                                 <div class="product-img">
-                                    <img src="images/watch.png" alt="">
+                                    <img src="images/watch.png" alt="watch">
+                                    <div class="product-icons">
+                                        <button class="scale-icon"></button>
+                                        <button class="like-icon"></button>
+                                    </div>
                                 </div>                                
                                 <div class="product-info">
                                     <h2>#2 Device Name</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>                            
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                                     <p><span>type:</span> Laptop</p>
                                     <p><span>screen size:</span> 7 inches</p>
                                     <p><span>ram:</span> 1 GB</p>
-                                    <p><h1 class="price">$399<sup>50</sup></h1></p>
-                                    <input class="btn transparent" type="button" value="MORE DETAILS">
-                                    <input class="btn" type="button" value="ADD TO CART">
+                                    <p><h1 class="centered-text">$399<sup>50</sup></h1></p>
+                                    <button class="btn-type-2">MORE DETAILS</button>
+                                    <button class="btn-type-1">
+                                        ADD TO CART
+                                        <img src="images/cart-add.png" alt="">
+                                    </button>
                                 </div>                                                        
                             </div>            
                         </div>
