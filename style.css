@@ -70,7 +70,7 @@ select {
 }
 
 .menu li:last-child {
-    border-right: var(--border);    
+    border-right: var(--menu-border);    
 }
 
 .menu > li > span::after {    
@@ -154,6 +154,7 @@ select {
 }
 
 .form-search > [type="text"] {
+    color: var(--accent-color);
     width: calc(100% - 30px);
     height: 100%;
     padding: 0 20px;
