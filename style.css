@@ -1,7 +1,9 @@
 @import 'grid.css';
 
 :root {
-    --menu-border: 1px solid #2c81b8;
+    --accent-color: #2c71b8;    
+    --fw-light: 300;
+    --fw-bold: 700;    
 }
 
 * {
@@ -14,7 +16,7 @@ body {
 }
 
 h1, h2 {
-    font-weight: bold;
+    font-weight: var(--fw-bold);
     color: white;
 }
 
@@ -56,32 +58,39 @@ select {
     clear: both;
 }
 
+.menu {
+    --border: 1px solid var(--accent-color);
+}
+
 .menu > li {    
     position: relative;
     float: left;
     width: 25%;
-    border-left: var(--menu-border);
+    border-left: var(--border);
 }
 
 .menu li:last-child {
-    border-right: var(--menu-border);    
+    border-right: var(--border);    
 }
 
 .menu > li > span::after {    
-    content: "";        
+    content: "";            
     position: absolute;    
-    top: 50%;
-    left: 80%;
-    transform: translateY(-50%);
     width: 20px;
     height: 20px;
-    background: url(images/arrow-down.png) center / 21px 21px no-repeat;
+    top: 50%;
+    left: 80%;    
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);    
+    background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="5"><polyline points="0,0 5,5 10,0" style="fill:none; stroke:rgb(44, 113, 184);"/></svg>') center no-repeat;
 }
 
 .menu a, 
 .menu span {
     display: block;
-    text-decoration: none;
+    text-decoration: none;    
     font-size: 21px;
     font-weight: 300;
 }
@@ -91,21 +100,21 @@ select {
     height: 50px;
     line-height: 50px;
     text-align: center;
-    color: #2c81b8;
+    color: var(--accent-color);
 }
 
 .menu > li:hover > .submenu {
     display: block;         
 }
 
-.menu > li:hover > span::after {
-    background: url(images/arrow-down-active.png) center / 20px 20px no-repeat;    
+.menu > li:hover > span::after {    
+    background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="5"><polyline points="0,0 5,5 10,0" style="fill:none; stroke:white;"/></svg>') center no-repeat;
 }
     
 .menu > li:hover > span,
 .menu > li:hover > a {
     color: white;
-    background-color: #2c71b8; 
+    background-color: var(--accent-color); 
 }
 
 .submenu {
@@ -119,12 +128,12 @@ select {
 .submenu > li > a { 
     line-height: 40px;        
     color: white;
-    background-color: #2c71b8; 
+    background-color: var(--accent-color); 
     padding-left: 10.4895105%;
 }
 
 .submenu > li > a:hover {    
-    color: #2c71b8;
+    color: var(--accent-color);
     background-color: white; 
 }
 
@@ -132,7 +141,7 @@ select {
     width: calc(100% + 30px);
     height: 40px;    
     margin-top: 5px;           
-    border: 1px solid #2c71b8;    
+    border: 1px solid var(--accent-color);    
     padding: 4px 4px;    
     background-color: transparent;
 }
@@ -155,16 +164,16 @@ select {
     width: 30px;
     height: 30px;
     background: url(images/search.png) center no-repeat;
-    background-color: #2c71b8;
+    background-color: var(--accent-color);
 }
 
 .form-search > [type="text"]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #2c71b8;
+    color: var(--accent-color);
     opacity: 1; /* Firefox */
  }
 
  .form-search > [type="text"]::-ms-input-placeholder { /* Microsoft Edge */
-    color: #2c71b8;
+    color: var(--accent-color);
 }
 
 .cart {     
@@ -177,26 +186,26 @@ select {
     background-color: white;
 }
 
-.product-counter {
+.cart-counter {
     float: left;
     position: relative;
     top: -10px;
     left: -10px;
-    width: 20px;    
-    height: 20px;            
-    line-height: 20px;    
-    text-align: center;    
-    font-size: 12px;     
+    width: 20px;
+    height: 20px;       
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
     border-radius: 50%;
     color: white;
-    background-color: #235a93;  
+    background-color: var(--accent-color);
 }
 
 .nav-main * {
     font-size: 14px;
-    font-weight: lighter;
+    font-weight: var(--fw-light);
     text-decoration: none;
-    color: rgb(210, 225, 240, 0.5);    
+    color: rgb(210, 225, 240, 0.5);  
 }
 
 .nav-main a:hover {        
@@ -208,45 +217,50 @@ select {
     background-color: rgba(202, 219, 237, 0.75);
     height: 180px;   
     background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><line style="stroke: rgb(232, 239, 247);" x1="0" y1="0" x2="100%" y2="100%"/><line style="stroke: rgb(232, 239, 247);" x1="100%" y1="0" x2="0" y2="100%"/></svg>');        
+
 }
 
 .product-img > img {
-    position: relative;         
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
 }
 
 
-.product-info {    
+.product-info {
     color: white;
     font-size: 21px;
-    font-weight: lighter;
-    padding: 15px 16px;    
-    border-top: none;    
+    font-weight: var(--fw-light);
+    padding: 15px 16px;
+    border-top: none;
 }
 
-.product-info >.btn-type-1, 
-.product-info > .btn-type-2 {              
+.product-info > .btn-add-to-cart,
+.product-info > .btn-more-details {
     margin: 0 auto 15px;
 }
 
 .product-info > p > span {
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: var(--fw-bold);
 }
 
 .product {
-    margin-top: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     border: 1px solid rgba(202, 219, 237, 0.7);
 }
 
-.product-icons {    
-    float: right;    
+.product-icons {
+    float: right;
 }
 
 .scale-icon, .like-icon {
     display: block;
-    border: 1px solid #2c71b8;
+    border: 1px solid var(--accent-color);
     width: 30px;
     height: 30px;
     margin: 10px 10px 10px -40px;
@@ -261,7 +275,7 @@ select {
 
 .scale-icon:hover {
     background: url(images/scale-active.png) center no-repeat;
-    background-color: #2c81b8;
+    background-color: var(--accent-color);
 }
 
 .like-icon {
@@ -270,28 +284,45 @@ select {
 
 .like-icon:hover {
     background: url(images/like-active.png) center no-repeat;
-    background-color: #2c81b8;
+    background-color: var(--accent-color);
 }
 
-.btn-type-1, .btn-type-2 {
+.btn-add-to-cart, .btn-more-details {
     display: block;
     width: 210px;
     height: 50px;
     font-size: 21px;
-    font-weight: bold;
+    font-weight: var(--fw-bold);
     color: white;    
     opacity: 0.75;        
-    cursor: pointer;
+    cursor: pointer;    
 }
 
-.btn-type-1 {    
+.btn-add-to-cart {    
     border: none;
     background-color: #568dc6;    
 }
 
-.btn-type-2 {
+.btn-more-details {
     border: 1px solid white;
-    background-color: #2c71b8;
+    background-color: var(--accent-color);
+}
+
+.btn-transparent { 
+    display: block;   
+    font-size: 36px;
+    font-weight: var(--fw-light);
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.hcentered-block {    
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .centered-text {
