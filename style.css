@@ -104,23 +104,23 @@ select {
 }
 
 .menu > li:hover > .submenu {
-    display: block;         
+    display: block;
 }
 
-.menu > li:hover > span::after {    
+.menu > li:hover > span::after {
     background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="5"><polyline points="0,0 5,5 10,0" style="fill:none; stroke:white;"/></svg>') center no-repeat;
 }
     
 .menu > li:hover > span,
 .menu > li:hover > a {
     color: white;
-    background-color: var(--accent-color); 
+    background-color: var(--accent-color);
 }
 
 .submenu {
     display: none;
     position: absolute;
-    left: -1px;    
+    left: -1px;
     width: calc(200% + 3px);
     z-index: 10;
 }
@@ -183,8 +183,8 @@ select {
     width: 40px;
     height: 40px;
     margin: 5px 0;
-    background: url(images/cart.png) center no-repeat;
-    background-color: white;
+    background: url(images/cart-dark.png) center no-repeat;
+    background-color: white;    
 }
 
 .cart-counter {
@@ -215,7 +215,7 @@ select {
 
 .product-img {    
     text-align: center;    
-    background-color: rgba(202, 219, 237, 0.75);
+    background-color: rgba(202, 219, 237, 0.75);    
     height: 180px;       
 }
 
@@ -235,10 +235,10 @@ select {
     font-weight: var(--fw-light);
     padding: 15px 16px;
     border-top: none;
+    background-color: rgba(44, 113, 184, 0.75);
 }
 
-.product-info > .btn-add-to-cart,
-.product-info > .btn-more-details {
+.product-info > .btn {
     margin: 0 auto 15px;
 }
 
@@ -257,7 +257,7 @@ select {
     float: right;
 }
 
-.scale-icon, .like-icon {
+.zoom-icon, .like-icon {
     display: block;
     border: 1px solid var(--accent-color);
     width: 30px;
@@ -268,12 +268,12 @@ select {
     outline: none;
 }
 
-.scale-icon {
-    background: url(images/scale.png) center no-repeat;
+.zoom-icon {
+    background: url(images/zoom.png) center no-repeat;
 }
 
-.scale-icon:hover {
-    background: url(images/scale-active.png) center no-repeat;
+.zoom-icon:hover {
+    background: url(images/zoom-active.png) center no-repeat;
     background-color: var(--accent-color);
 }
 
@@ -286,20 +286,37 @@ select {
     background-color: var(--accent-color);
 }
 
-.btn-add-to-cart, .btn-more-details {
+.btn {
     display: block;
     width: 210px;
     height: 50px;
     font-size: 21px;
     font-weight: var(--fw-bold);
-    color: white;    
-    opacity: 0.75;        
+    color: white;        
     cursor: pointer;    
 }
 
+.btn-add-to-cart:hover > .add-to-cart-icon {    
+    background: url(images/cart-dark.png) center no-repeat;
+}
+
+.btn:hover {
+    color: var(--accent-color);
+    background-color: white;
+}
+
+.add-to-cart-icon {
+    display: inline-block;
+    width: 1em;    
+    height: 1em;
+    position: relative;
+    top: 2px;    
+    background: url(images/cart-light.png) center no-repeat;
+}
+
 .btn-add-to-cart {    
-    border: none;
-    background-color: #568dc6;    
+    border: none;    
+    background-color: rgb(86, 141, 198, 0.8);
 }
 
 .btn-more-details {
@@ -307,7 +324,7 @@ select {
     background-color: var(--accent-color);
 }
 
-.btn-transparent { 
+.btn-load-more {
     display: block;   
     font-size: 36px;
     font-weight: var(--fw-light);
@@ -317,6 +334,10 @@ select {
     outline: none;
     cursor: pointer;
     margin: 15px 0;
+}
+
+.btn-load-more:hover {
+    text-decoration: underline;
 }
 
 .hcentered-block {    
