@@ -70,7 +70,7 @@ select {
 }
 
 .menu li:last-child {
-    border-right: var(--menu-border);    
+    border-right: var(--border);    
 }
 
 .menu > li > span::after {    
