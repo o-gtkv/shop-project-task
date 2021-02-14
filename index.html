@@ -64,7 +64,67 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    Filter
+                    <div class="filter">
+                        <div class="checkbox-group">
+                            <div class="text-upcase-bold">device type</div>                            
+                            <div class="checkbox">
+                                <input class="checkbox-input" type="checkbox" name="dev-type" id="cb-dev1">
+                                <label class="checkbox-label" for="cb-dev1">Laptop</label>
+                            </div>
+                            <div class="checkbox">
+                                <input class="checkbox-input" type="checkbox" name="dev-type" id="cb-dev2">
+                                <label class="checkbox-label" for="cb-dev2">Tablet</label>
+                            </div>
+                        </div>
+                        <div class="checkbox-group">
+                            <div class="text-upcase-bold">color</div>
+                            <div class="checkbox">
+                                <input class="checkbox-input" type="checkbox" name="dev-type" id="cb-color1">
+                                <label class="checkbox-label" for="cb-color1">Black</label>
+                            </div>
+                            <div class="checkbox">
+                                <input class="checkbox-input" type="checkbox" name="dev-type" id="cb-color2">
+                                <label class="checkbox-label" for="cb-color2">Red</label>
+                            </div>                            
+                            <div class="checkbox">
+                                <input class="checkbox-input" type="checkbox" name="dev-type" id="cb-color3">
+                                <label class="checkbox-label" for="cb-color3">Green</label>
+                            </div>
+                            <div class="checkbox">
+                                <input class="checkbox-input" type="checkbox" name="dev-type" id="cb-color4">
+                                <label class="checkbox-label" for="cb-color4">Blue</label>
+                            </div>
+                            <div class="checkbox">
+                                <input class="checkbox-input" type="checkbox" name="dev-type" id="cb-color5">
+                                <label class="checkbox-label" for="cb-color5">Orange</label>
+                            </div>
+                        </div>
+                        <div class="checkbox-group">
+                            <div class="text-upcase-bold">ram</div>                            
+                            <div class="checkbox">
+                                <input class="checkbox-input" type="checkbox" name="dev-type" id="cb-ram1">
+                                <label class="checkbox-label" for="cb-ram1">1 GB</label>
+                            </div>
+                            <div class="checkbox">
+                                <input class="checkbox-input" type="checkbox" name="dev-type" id="cb-ram2">
+                                <label class="checkbox-label" for="cb-ram2">2 GB</label>
+                            </div>
+                            <div class="checkbox">
+                                <input class="checkbox-input" type="checkbox" name="dev-type" id="cb-ram3">
+                                <label class="checkbox-label" for="cb-ram3">4 GB</label>
+                            </div>
+                            <div class="checkbox">
+                                <input class="checkbox-input" type="checkbox" name="dev-type" id="cb-ram4">
+                                <label class="checkbox-label" for="cb-ram4">6 GB</label>
+                            </div>                            
+                            <div class="checkbox">
+                                <input class="checkbox-input" type="checkbox" name="dev-type" id="cb-ram5">
+                                <label class="checkbox-label" for="cb-ram5">8 GB</label>
+                            </div>                                                        
+                        </div>
+                        <button class="btn-transparent block-center text-primary" id="btn-more-option">Show more options ...</button>                                    
+                        <button class="btn btn-type1 block-center">submit</button>
+                    </div>
                 </div>
                 <div class="col-md-9">
                     <nav class="nav-main">
@@ -79,8 +139,8 @@
                             <h1>Laptops and Tablets</h1>
                         </div>
                         <div class="col-md-3">
-                            select
-                        </div>    
+                            Sorting
+                        </div>
                     </div>
                                         
                     <div class="row">
@@ -96,13 +156,19 @@
                                 <div class="product-info">
                                     <h2>#1 Device Name</h2>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                                    <p><span>type:</span> Laptop</p>
-                                    <p><span>screen size:</span> 7 inches</p>
-                                    <p><span>ram:</span> 1 GB</p>
-                                    <p><h1 class="centered-text">$599<sup>25</sup></h1></p>
-                                    <button class="btn btn-more-details">MORE DETAILS</button>
-                                    <button class="btn btn-add-to-cart">
-                                        ADD TO CART
+                                    <p>
+                                        <span class="text-upcase-bold">type:</span> Laptop
+                                    </p>
+                                    <p>
+                                        <span class="text-upcase-bold">screen size:</span> 7 inches
+                                    </p>
+                                    <p>
+                                        <span class="text-upcase-bold">ram:</span> 1 GB
+                                    </p>
+                                    <p><h1 class="text-center">$599<sup>25</sup></h1></p>
+                                    <button class="btn btn-type1 block-center">more details</button>    
+                                    <button class="btn btn-type2 block-center">
+                                        add to cart
                                         <span class="add-to-cart-icon"></span>
                                     </button>
                                 </div>
@@ -120,15 +186,21 @@
                                 <div class="product-info">
                                     <h2>#2 Device Name</h2>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                                    <p><span>type:</span> Laptop</p>
-                                    <p><span>screen size:</span> 7 inches</p>
-                                    <p><span>ram:</span> 1 GB</p>
-                                    <p><h1 class="centered-text">$1250<sup>99</sup></h1></p>
-                                    <button class="btn btn-more-details">MORE DETAILS</button>
-                                    <button class="btn btn-add-to-cart">
-                                        ADD TO CART
+                                    <p>
+                                        <span class="text-upcase-bold">type:</span> Laptop
+                                    </p>
+                                    <p>
+                                        <span class="text-upcase-bold">screen size:</span> 7 inches
+                                    </p>
+                                    <p>
+                                        <span class="text-upcase-bold">ram:</span> 1 GB
+                                    </p>
+                                    <p><h1 class="text-center">$1250<sup>99</sup></h1></p>
+                                    <button class="btn btn-type1 block-center">more details</button>    
+                                    <button class="btn btn-type2 block-center">
+                                        add to cart
                                         <span class="add-to-cart-icon"></span>
-                                    </button>   
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -144,13 +216,19 @@
                                 <div class="product-info">
                                     <h2>#2 Device Name</h2>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                                    <p><span>type:</span> Laptop</p>
-                                    <p><span>screen size:</span> 7 inches</p>
-                                    <p><span>ram:</span> 1 GB</p>
-                                    <p><h1 class="centered-text">$399<sup>50</sup></h1></p>
-                                    <button class="btn btn-more-details">MORE DETAILS</button>
-                                    <button class="btn btn-add-to-cart">
-                                        ADD TO CART
+                                    <p>
+                                        <span class="text-upcase-bold">type:</span> Laptop
+                                    </p>
+                                    <p>
+                                        <span class="text-upcase-bold">screen size:</span> 7 inches
+                                    </p>
+                                    <p>
+                                        <span class="text-upcase-bold">ram:</span> 1 GB
+                                    </p>
+                                    <p><h1 class="text-center">$399<sup>50</sup></h1></p>
+                                    <button class="btn btn-type1 block-center">more details</button>    
+                                    <button class="btn btn-type2 block-center">
+                                        add to cart
                                         <span class="add-to-cart-icon"></span>
                                     </button>
                                 </div>                                                        
@@ -171,13 +249,19 @@
                                 <div class="product-info">
                                     <h2>#1 Device Name</h2>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                                    <p><span>type:</span> Laptop</p>
-                                    <p><span>screen size:</span> 7 inches</p>
-                                    <p><span>ram:</span> 1 GB</p>
-                                    <p><h1 class="centered-text">$599<sup>25</sup></h1></p>                                    
-                                    <button class="btn btn-more-details">MORE DETAILS</button>    
-                                    <button class="btn btn-add-to-cart">
-                                        ADD TO CART
+                                    <p>
+                                        <span class="text-upcase-bold">type:</span> Laptop
+                                    </p>
+                                    <p>
+                                        <span class="text-upcase-bold">screen size:</span> 7 inches
+                                    </p>
+                                    <p>
+                                        <span class="text-upcase-bold">ram:</span> 1 GB
+                                    </p>
+                                    <p><h1 class="text-center">$599<sup>25</sup></h1></p>                                    
+                                    <button class="btn btn-type1 block-center">more details</button>    
+                                    <button class="btn btn-type2 block-center">
+                                        add to cart
                                         <span class="add-to-cart-icon"></span>
                                     </button>
                                 </div>                
@@ -195,15 +279,21 @@
                                 <div class="product-info">
                                     <h2>#2 Device Name</h2>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                                    <p><span>type:</span> Laptop</p>
-                                    <p><span>screen size:</span> 7 inches</p>
-                                    <p><span>ram:</span> 1 GB</p>
-                                    <p><h1 class="centered-text">$1250<sup>99</sup></h1></p>
-                                    <button class="btn btn-more-details">MORE DETAILS</button>
-                                    <button class="btn btn-add-to-cart">
-                                        ADD TO CART
+                                    <p>
+                                        <span class="text-upcase-bold">type:</span> Laptop
+                                    </p>
+                                    <p>
+                                        <span class="text-upcase-bold">screen size:</span> 7 inches
+                                    </p>
+                                    <p>
+                                        <span class="text-upcase-bold">ram:</span> 1 GB
+                                    </p>
+                                    <p><h1 class="text-center">$1250<sup>99</sup></h1></p>
+                                    <button class="btn btn-type1 block-center">more details</button>    
+                                    <button class="btn btn-type2 block-center">
+                                        add to cart
                                         <span class="add-to-cart-icon"></span>
-                                    </button>                                    
+                                    </button>                                 
                                 </div>                                                
                             </div>            
                         </div>
@@ -218,16 +308,22 @@
                                 </div>                                
                                 <div class="product-info">
                                     <h2>#2 Device Name</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                                    <p><span>type:</span> Laptop</p>
-                                    <p><span>screen size:</span> 7 inches</p>
-                                    <p><span>ram:</span> 1 GB</p>
-                                    <p><h1 class="centered-text">$399<sup>50</sup></h1></p>
-                                    <button class="btn btn-more-details">MORE DETAILS</button>
-                                    <button class="btn btn-add-to-cart">
-                                        ADD TO CART
-                                        <!-- <img class="add-to-cart-icon" src="images/cart-light.png" alt=""> -->
-                                        <!-- <div class="add-to-cart-icon"></div>                                         -->
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    </p>
+                                    <p>
+                                        <span class="text-upcase-bold">type:</span> Laptop
+                                    </p>
+                                    <p>
+                                        <span class="text-upcase-bold">screen size:</span> 7 inches
+                                    </p>
+                                    <p>
+                                        <span class="text-upcase-bold">ram:</span> 1 GB
+                                    </p>
+                                    <p><h1 class="text-center">$399<sup>50</sup></h1></p>
+                                    <button class="btn btn-type1 block-center">more details</button>    
+                                    <button class="btn btn-type2 block-center">
+                                        add to cart
                                         <span class="add-to-cart-icon"></span>
                                     </button>
                                 </div>                                                        
@@ -247,14 +343,24 @@
                                 </div>                                
                                 <div class="product-info">
                                     <h2>#1 Device Name</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                                    <p><span>type:</span> Laptop</p>
-                                    <p><span>screen size:</span> 7 inches</p>
-                                    <p><span>ram:</span> 1 GB</p>
-                                    <p><h1 class="centered-text">$599<sup>25</sup></h1></p>                                    
-                                    <button class="btn btn-more-details">MORE DETAILS</button>    
-                                    <button class="btn btn-add-to-cart">
-                                        ADD TO CART
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    </p>
+                                    <p>
+                                        <span class="text-upcase-bold">type:</span> Laptop
+                                    </p>
+                                    <p>
+                                        <span class="text-upcase-bold">screen size:</span> 7 inches
+                                    </p>
+                                    <p>
+                                        <span class="text-upcase-bold">ram:</span> 1 GB
+                                    </p>
+                                    <p>
+                                        <h1 class="text-center">$599<sup>25</sup></h1>
+                                    </p>                                    
+                                    <button class="btn btn-type1 block-center">more details</button>    
+                                    <button class="btn btn-type2 block-center">
+                                        add to cart
                                         <span class="add-to-cart-icon"></span>
                                     </button>
                                 </div>                
@@ -272,15 +378,21 @@
                                 <div class="product-info">
                                     <h2>#2 Device Name</h2>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                                    <p><span>type:</span> Laptop</p>
-                                    <p><span>screen size:</span> 7 inches</p>
-                                    <p><span>ram:</span> 1 GB</p>
-                                    <p><h1 class="centered-text">$1250<sup>99</sup></h1></p>
-                                    <button class="btn btn-more-details">MORE DETAILS</button>
-                                    <button class="btn btn-add-to-cart">
-                                        ADD TO CART
+                                    <p>
+                                        <span class="text-upcase-bold">type:</span> Laptop
+                                    </p>
+                                    <p>
+                                        <span class="text-upcase-bold">screen size:</span> 7 inches
+                                    </p>
+                                    <p>
+                                        <span class="text-upcase-bold">ram:</span> 1 GB
+                                    </p>
+                                    <p><h1 class="text-center">$1250<sup>99</sup></h1></p>
+                                    <button class="btn btn-type1 block-center">more details</button>    
+                                    <button class="btn btn-type2 block-center">
+                                        add to cart
                                         <span class="add-to-cart-icon"></span>
-                                    </button>                                    
+                                    </button>         
                                 </div>                                                
                             </div>            
                         </div>
@@ -296,13 +408,19 @@
                                 <div class="product-info">
                                     <h2>#2 Device Name</h2>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                                    <p><span>type:</span> Laptop</p>
-                                    <p><span>screen size:</span> 7 inches</p>
-                                    <p><span>ram:</span> 1 GB</p>
-                                    <p><h1 class="centered-text">$399<sup>50</sup></h1></p>
-                                    <button class="btn btn-more-details">MORE DETAILS</button>
-                                    <button class="btn btn-add-to-cart">
-                                        ADD TO CART
+                                    <p>
+                                        <span class="text-upcase-bold">type:</span> Laptop
+                                    </p>
+                                    <p>
+                                        <span class="text-upcase-bold">screen size:</span> 7 inches
+                                    </p>
+                                    <p>
+                                        <span class="text-upcase-bold">ram:</span> 1 GB
+                                    </p>
+                                    <p><h1 class="text-center">$399<sup>50</sup></h1></p>
+                                    <button class="btn btn-type1 block-center">more details</button>    
+                                    <button class="btn btn-type2 block-center">
+                                        add to cart
                                         <span class="add-to-cart-icon"></span>
                                     </button>
                                 </div>
@@ -311,7 +429,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <button  class=" btn-load-more hcentered-block">Load more...</button>                            
+                            <button  class="btn-transparent btn-load-more block-center">Load more ...</button>                            
                         </div>
                     </div>
                 </div>        

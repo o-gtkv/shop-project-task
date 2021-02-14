@@ -12,7 +12,17 @@
 
 body {      
     font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    font-weight: var(--fw-light);
+    color: white;
     background-image: url(images/patt.png);
+    background-attachment: fixed;    
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    font-weight: var(--fw-light);    
 }
 
 h1, h2 {
@@ -29,7 +39,7 @@ h2 {
 }
 
 p {
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 select {
@@ -45,7 +55,7 @@ select {
 .header {
     min-width: 1200px;
     padding: 25px 0;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.75);    
 }
 
 .logo {
@@ -137,35 +147,35 @@ select {
     background-color: white; 
 }
 
-.form-search {
+.form-search {   
+    position: relative;     
     width: calc(100% + 30px);
     height: 40px;    
-    margin-top: 5px;           
+    margin-top: 5px;
     border: 1px solid var(--accent-color);    
-    padding: 4px 4px;    
-    background-color: transparent;
 }
 
-.form-search > * {
-    float: left;
-    border: none;    
-    background-color: transparent;
-    outline: none;    
+.form-search > * {            
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;        
+    height: 30px;
+    outline: none;
 }
 
-.form-search > [type="text"] {
+.form-search > [type="text"] {    
     color: var(--accent-color);
-    width: calc(100% - 30px);
-    height: 100%;
+    background-color: transparent;
+    width: calc(100% - 34px);    /* 34px => ширина_кнопки(30px) + отступ_справа */
     padding: 0 20px;
     font-size: 21px;
 }
 
-.form-search > [type="submit"] {
-    width: 30px;
-    height: 30px;
-    background: url(images/search.png) center no-repeat;
-    background-color: var(--accent-color);
+.form-search > [type="submit"] {            
+    left: calc(100% - 34px);    /* смещаем кнопку на расстояние равное ширине поля ввода */    
+    width: 30px;    
+    background: url(images/search.png) center no-repeat, var(--accent-color);
 }
 
 .form-search > [type="text"]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -175,7 +185,7 @@ select {
 
  .form-search > [type="text"]::-ms-input-placeholder { /* Microsoft Edge */
     color: var(--accent-color);
-}
+} 
 
 .cart {     
     display: block;
@@ -228,10 +238,8 @@ select {
     -moz-transform: translateY(-50%);
 }
 
-
 .product-info {
-    color: white;
-    font-size: 21px;
+    color: white;    
     font-weight: var(--fw-light);
     padding: 15px 16px;
     border-top: none;
@@ -239,10 +247,11 @@ select {
 }
 
 .product-info > .btn {
-    margin: 0 auto 15px;
+    margin-bottom: 15px;
 }
 
-.product-info > p > span {
+/* .product-info > p > span { */
+.text-upcase-bold {
     text-transform: uppercase;
     font-weight: var(--fw-bold);
 }
@@ -292,8 +301,10 @@ select {
     height: 50px;
     font-size: 21px;
     font-weight: var(--fw-bold);
+    border: none;    
     color: white;        
-    cursor: pointer;    
+    cursor: pointer;
+    text-transform: uppercase;
 }
 
 .btn-add-to-cart:hover > .add-to-cart-icon {    
@@ -305,6 +316,32 @@ select {
     background-color: white;
 }
 
+.btn-type2 {        
+    background-color: rgb(86, 141, 198, 0.8);
+}
+
+.btn-type1 {
+    border: 1px solid white;
+    background-color: var(--accent-color);
+}
+
+.btn-transparent {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-load-more {    
+    font-size: 36px;    
+    color: white;    
+    margin: 15px 0;
+}
+
+.btn-transparent:hover {
+    text-decoration: underline;
+}
+
 .add-to-cart-icon {
     display: inline-block;
     width: 1em;    
@@ -314,37 +351,65 @@ select {
     background: url(images/cart-light.png) center no-repeat;
 }
 
-.btn-add-to-cart {    
-    border: none;    
-    background-color: rgb(86, 141, 198, 0.8);
-}
-
-.btn-more-details {
-    border: 1px solid white;
-    background-color: var(--accent-color);
-}
-
-.btn-load-more {
-    display: block;   
-    font-size: 36px;
-    font-weight: var(--fw-light);
-    color: white;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    margin: 15px 0;
-}
-
-.btn-load-more:hover {
-    text-decoration: underline;
-}
-
-.hcentered-block {    
+.block-center {    
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.centered-text {
+.text-center {
     text-align: center;
+}
+
+.filter {
+    background-color: rgba(86, 141, 198, 0.8);        
+    padding-bottom: 30px;    
+    padding-top: 30px;  
+}
+
+.checkbox-group {
+    padding-left: 30px;        
+}
+
+.checkbox-group:nth-child(-n+2) {
+    padding-bottom: 60px;
+}
+
+.text-primary {
+    color: white;
+    font-size: 21px;
+    font-weight: var(--fw-light);
+}
+
+.checkbox-input {
+    display: none;
+}
+
+.checkbox-input:checked + .checkbox-label::before {
+    background-color: white;
+}
+
+.checkbox-label::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    border: 1px solid white;
+}
+
+.checkbox {
+    padding: 10px 0;
+}
+
+.checkbox:last-child {
+    padding-bottom: 0;
+}
+
+.checkbox:hover > .checkbox-label::before {
+    box-shadow: 0px 0px 10px 5px var(--accent-color);
+}
+
+#btn-more-option {
+    padding: 20px 0;
 }
