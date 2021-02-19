@@ -16,7 +16,6 @@ body {
     font-weight: var(--fw-light);
     color: white;
     background-image: url(images/patt.png);
-    background-attachment: fixed;    
 }
 
 button {
@@ -362,9 +361,10 @@ select {
 }
 
 .filter {
-    background-color: rgba(86, 141, 198, 0.8);        
-    padding-bottom: 30px;    
-    padding-top: 30px;  
+    background-color: rgba(86, 141, 198, 0.8);
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-right: 1px solid white;
 }
 
 .checkbox-group {
