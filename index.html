@@ -51,7 +51,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="cart">
-                                <div class="cart-counter">0</div>
+                                <div class="cart-counter" id="product-count">0</div>
                             </div>
                         </div>
                     </div>
@@ -59,7 +59,6 @@
             </div>
         </div>
     </header>
-
     <main class="main">
         <div class="container">
             <div class="row">
@@ -142,15 +141,14 @@
                             Sorting
                         </div>
                     </div>
-                                        
                     <div class="row">
                         <div class="col-md-4">
                             <div class="product">
                                 <div class="product-img">
                                     <img src="images/display.png" alt="display">
-                                    <div class="product-icons">
-                                        <button class="zoom-icon"></button>
-                                        <button class="like-icon"></button>
+                                    <div class="product-btn-bar">
+                                        <button class="icon-zoom"></button>
+                                        <button class="icon-like"></button>
                                     </div>
                                 </div>
                                 <div class="product-info">
@@ -167,7 +165,7 @@
                                     </p>
                                     <p><h1 class="text-center">$599<sup>25</sup></h1></p>
                                     <button class="btn btn-type1 block-center">more details</button>    
-                                    <button class="btn btn-type2 block-center">
+                                    <button class="btn btn-type2 btn-add-to-cart block-center">
                                         add to cart
                                         <span class="add-to-cart-icon"></span>
                                     </button>
@@ -178,9 +176,9 @@
                             <div class="product">
                                 <div class="product-img">
                                     <img src="images/tv-box.png" alt="tv-box">
-                                    <div class="product-icons">
-                                        <button class="zoom-icon"></button>
-                                        <button class="like-icon"></button>
+                                    <div class="product-btn-bar">
+                                        <button class="icon-zoom"></button>
+                                        <button class="icon-like" selected="false"></button>
                                     </div>
                                 </div>
                                 <div class="product-info">
@@ -197,7 +195,7 @@
                                     </p>
                                     <p><h1 class="text-center">$1250<sup>99</sup></h1></p>
                                     <button class="btn btn-type1 block-center">more details</button>    
-                                    <button class="btn btn-type2 block-center">
+                                    <button class="btn btn-type2 btn-add-to-cart block-center">
                                         add to cart
                                         <span class="add-to-cart-icon"></span>
                                     </button>
@@ -208,9 +206,9 @@
                             <div class="product">
                                 <div class="product-img">
                                     <img src="images/watch.png" alt="watch">
-                                    <div class="product-icons">
-                                        <button class="zoom-icon"></button>
-                                        <button class="like-icon"></button>
+                                    <div class="product-btn-bar">
+                                        <button class="icon-zoom"></button>
+                                        <button class="icon-like"></button>
                                     </div>
                                 </div>                                
                                 <div class="product-info">
@@ -227,7 +225,7 @@
                                     </p>
                                     <p><h1 class="text-center">$399<sup>50</sup></h1></p>
                                     <button class="btn btn-type1 block-center">more details</button>    
-                                    <button class="btn btn-type2 block-center">
+                                    <button class="btn btn-type2 btn-add-to-cart block-center">
                                         add to cart
                                         <span class="add-to-cart-icon"></span>
                                     </button>
@@ -235,15 +233,14 @@
                             </div>            
                         </div>
                     </div>        
-
                     <div class="row">
                         <div class="col-md-4">
                             <div class="product">
                                 <div class="product-img">
                                     <img src="images/notebook.png" alt="display">
-                                    <div class="product-icons">
-                                        <button class="zoom-icon"></button>
-                                        <button class="like-icon"></button>
+                                    <div class="product-btn-bar">
+                                        <button class="icon-zoom"></button>
+                                        <button class="icon-like"></button>
                                     </div>                                    
                                 </div>                                
                                 <div class="product-info">
@@ -260,7 +257,7 @@
                                     </p>
                                     <p><h1 class="text-center">$599<sup>25</sup></h1></p>                                    
                                     <button class="btn btn-type1 block-center">more details</button>    
-                                    <button class="btn btn-type2 block-center">
+                                    <button class="btn btn-type2 btn-add-to-cart block-center">
                                         add to cart
                                         <span class="add-to-cart-icon"></span>
                                     </button>
@@ -271,9 +268,9 @@
                             <div class="product">
                                 <div class="product-img">
                                     <img src="images/player.png" alt="tv-box">
-                                    <div class="product-icons">
-                                        <button class="zoom-icon"></button>
-                                        <button class="like-icon"></button>
+                                    <div class="product-btn-bar">
+                                        <button class="icon-zoom"></button>
+                                        <button class="icon-like"></button>
                                     </div>
                                 </div>                                
                                 <div class="product-info">
@@ -290,7 +287,7 @@
                                     </p>
                                     <p><h1 class="text-center">$1250<sup>99</sup></h1></p>
                                     <button class="btn btn-type1 block-center">more details</button>    
-                                    <button class="btn btn-type2 block-center">
+                                    <button class="btn btn-type2 btn-add-to-cart block-center">
                                         add to cart
                                         <span class="add-to-cart-icon"></span>
                                     </button>                                 
@@ -301,9 +298,9 @@
                             <div class="product">
                                 <div class="product-img">
                                     <img src="images/smartphone.png" alt="watch">
-                                    <div class="product-icons">
-                                        <button class="zoom-icon"></button>
-                                        <button class="like-icon"></button>
+                                    <div class="product-btn-bar">
+                                        <button class="icon-zoom"></button>
+                                        <button class="icon-like"></button>
                                     </div>
                                 </div>                                
                                 <div class="product-info">
@@ -322,7 +319,7 @@
                                     </p>
                                     <p><h1 class="text-center">$399<sup>50</sup></h1></p>
                                     <button class="btn btn-type1 block-center">more details</button>    
-                                    <button class="btn btn-type2 block-center">
+                                    <button class="btn btn-type2 btn-add-to-cart block-center">
                                         add to cart
                                         <span class="add-to-cart-icon"></span>
                                     </button>
@@ -330,15 +327,14 @@
                             </div>            
                         </div>
                     </div>        
-
                     <div class="row">
                         <div class="col-md-4">
                             <div class="product">
                                 <div class="product-img">
                                     <img src="images/tablet.png" alt="display">
-                                    <div class="product-icons">
-                                        <button class="zoom-icon"></button>
-                                        <button class="like-icon"></button>
+                                    <div class="product-btn-bar">
+                                        <button class="icon-zoom"></button>
+                                        <button class="icon-like"></button>
                                     </div>                                    
                                 </div>                                
                                 <div class="product-info">
@@ -359,7 +355,7 @@
                                         <h1 class="text-center">$599<sup>25</sup></h1>
                                     </p>                                    
                                     <button class="btn btn-type1 block-center">more details</button>    
-                                    <button class="btn btn-type2 block-center">
+                                    <button class="btn btn-type2 btn-add-to-cart block-center">
                                         add to cart
                                         <span class="add-to-cart-icon"></span>
                                     </button>
@@ -370,9 +366,9 @@
                             <div class="product">
                                 <div class="product-img">
                                     <img src="images/tv-box-2.png" alt="tv-box">
-                                    <div class="product-icons">
-                                        <button class="zoom-icon"></button>
-                                        <button class="like-icon"></button>
+                                    <div class="product-btn-bar">
+                                        <button class="icon-zoom"></button>
+                                        <button class="icon-like"></button>
                                     </div>
                                 </div>                                
                                 <div class="product-info">
@@ -389,7 +385,7 @@
                                     </p>
                                     <p><h1 class="text-center">$1250<sup>99</sup></h1></p>
                                     <button class="btn btn-type1 block-center">more details</button>    
-                                    <button class="btn btn-type2 block-center">
+                                    <button class="btn btn-type2 btn-add-to-cart block-center">
                                         add to cart
                                         <span class="add-to-cart-icon"></span>
                                     </button>         
@@ -400,9 +396,9 @@
                             <div class="product">
                                 <div class="product-img">
                                     <img src="images/watch-2.png" alt="watch">
-                                    <div class="product-icons">
-                                        <button class="zoom-icon"></button>
-                                        <button class="like-icon"></button>
+                                    <div class="product-btn-bar">
+                                        <button class="icon-zoom"></button>
+                                        <button class="icon-like"></button>
                                     </div>
                                 </div>            
                                 <div class="product-info">
@@ -419,7 +415,7 @@
                                     </p>
                                     <p><h1 class="text-center">$399<sup>50</sup></h1></p>
                                     <button class="btn btn-type1 block-center">more details</button>    
-                                    <button class="btn btn-type2 block-center">
+                                    <button class="btn btn-type2 btn-add-to-cart block-center">
                                         add to cart
                                         <span class="add-to-cart-icon"></span>
                                     </button>
@@ -436,9 +432,9 @@
             </div>        
         </div>    
     </main>
-
     <footer class="footer">
         footer
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>

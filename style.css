@@ -1,5 +1,3 @@
-@import 'grid.css';
-
 :root {
     --accent-color: #2c71b8;    
     --fw-light: 300;
@@ -261,11 +259,11 @@ select {
     border: 1px solid rgba(202, 219, 237, 0.7);
 }
 
-.product-icons {
+.product-btn-bar {
     float: right;
 }
 
-.zoom-icon, .like-icon {
+.icon-zoom, .icon-like {
     display: block;
     border: 1px solid var(--accent-color);
     width: 30px;
@@ -276,22 +274,24 @@ select {
     outline: none;
 }
 
-.zoom-icon {
+.icon-zoom {
     background: url(images/zoom.png) center no-repeat;
 }
 
-.zoom-icon:hover {
-    background: url(images/zoom-active.png) center no-repeat;
-    background-color: var(--accent-color);
+.icon-zoom:hover {
+    background: url(images/zoom-active.png) center no-repeat, var(--accent-color);
 }
 
-.like-icon {
+.icon-like {
     background: url(images/like.png) center no-repeat;
 }
 
-.like-icon:hover {
+.icon-like-selected {
     background: url(images/like-active.png) center no-repeat;
-    background-color: var(--accent-color);
+}
+
+.icon-like:hover {
+    background: url(images/like-active.png) center no-repeat, var(--accent-color);    
 }
 
 .btn {
@@ -412,4 +412,46 @@ select {
 
 #btn-more-option {
     padding: 20px 0;
+}
+
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.row::after, .menu::after, .search-form::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+[class*="col-"] {
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-md-3 {
+    width: 25%;
+}
+
+.col-md-4 {
+    width: 33.3333333%;
+}
+
+.col-md-6 {
+    width: 50%;
+}
+
+.col-md-8 {    
+    width: 66.6666667%;
+}
+
+.col-md-9 {
+    width: 75%;
+}
+
+.col-md-12 {
+    width: 100%;
 }
