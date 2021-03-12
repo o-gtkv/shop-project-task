@@ -11,6 +11,6 @@ for (let i = 0; i < addToCartBtnList.length; ++i) {
 const likeIconList = document.querySelectorAll(".icon-like")
 for (let i = 0; i < likeIconList.length; ++i) {
     likeIconList[i].addEventListener("click", () => {
-        likeIconList[i].classList.toggle("icon-like-selected");
+        likeIconList[i].classList.toggle("icon-like-selected")
     })
 }

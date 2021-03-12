@@ -286,11 +286,8 @@ select {
     background: url(images/like.png) center no-repeat;
 }
 
+.icon-like:hover,
 .icon-like-selected {
-    background: url(images/like-active.png) center no-repeat;
-}
-
-.icon-like:hover {
     background: url(images/like-active.png) center no-repeat, var(--accent-color);    
 }
 
