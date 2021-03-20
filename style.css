@@ -422,11 +422,17 @@ select {
     font-size: 21px;    
     color: white;    
     padding: 0;
+    outline: none;
 }
 
 .product-quantity__button {
     width: 10%;        
     background-color: rgb(86, 141, 198, 0.8);
+}
+
+.product-quantity__button:hover {
+    color: var(--accent-color);
+    background-color: white;
 }
 
 .product-quantity__text-input {
