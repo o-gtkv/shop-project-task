@@ -411,6 +411,29 @@ select {
     padding: 20px 0;
 }
 
+.product-quantity {    
+    margin: 0 auto 15px;
+    width: 210px;
+    border: 1px solid white;    
+}
+
+[class*="product-quantity__"] {
+    border: none;       
+    font-size: 21px;    
+    color: white;    
+    padding: 0;
+}
+
+.product-quantity__button {
+    width: 10%;        
+    background-color: rgb(86, 141, 198, 0.8);
+}
+
+.product-quantity__text-input {
+    width: 80%;          
+    background-color: transparent;        
+    text-align: center;
+}
 
 .row {
     margin-left: -15px;

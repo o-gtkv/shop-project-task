@@ -14,3 +14,25 @@ for (let i = 0; i < likeIconList.length; ++i) {
         likeIconList[i].classList.toggle("icon-like-selected")
     })
 }
+
+//--------------------------------------------------------------------
+const productQuantityList = document.querySelectorAll('.product-quantity')
+
+productQuantityList.forEach(item => item.addEventListener('click', function(e) {
+    const pqTextInput = item.querySelector('.product-quantity__text-input')
+    const target = e.target;
+    if (target.classList.contains('product-quantity__button')) {
+        const oldVal = +pqTextInput.getAttribute("value")
+        switch (target.innerText) {
+            case '+':                
+                pqTextInput.setAttribute("value", oldVal + 1)
+                break
+            case '-':
+                if (oldVal > 1) {
+                    pqTextInput.setAttribute("value", oldVal - 1)
+                }
+                break
+        }
+        console.log(pqTextInput.getAttribute("value"))
+    }
+}))
