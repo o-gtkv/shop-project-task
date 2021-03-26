@@ -481,3 +481,97 @@ select {
 .col-md-12 {
     width: 100%;
 }
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 100;
+}
+
+.modal-block {
+    width: 300px;
+    height: 200px;
+    margin: 80px auto;
+    border: 1px solid grey;
+    padding: 15px;
+    background-color: white;
+    color: black;
+}
+
+.form-fields {
+    margin: 10px 0;    
+}
+
+.form-fields input {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+}
+
+.btn-close {
+    text-align: right;
+    cursor: pointer;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.slider-block > div {
+    text-align: center;
+    padding: 170px 0;
+    font-size: 100px;
+    font-weight: lighter;    
+}
+
+
+.slick-dots li button::before {    
+    content: "□";
+    color: white;    
+    font-size: 16px;
+}
+
+.slick-dots li button:before {
+    content: "■";        
+}
+
+.slick-dots li.slick-active button::before {
+    color: white;
+    font-size: 16px;
+}
+
+.slick-prev {
+    left: 0px;
+}
+
+.slick-next {
+    right: 0px;
+}
+
+.slick-prev::before {    
+    content: "<";
+}
+
+.slick-next::before {
+    content: ">";
+}
+
+.slick-prev:before, 
+.slick-next:before {
+    font-size: 30px;    
+}
+
+.slider-wrapper {
+    padding-bottom: 30px;
+    border-bottom: 1px solid white;    
+    background-color: rgba(35, 90, 147, 0.5);
+}
